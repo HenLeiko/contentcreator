@@ -1,0 +1,199 @@
+// imports
+@import "normalize";
+@import "fonts";
+
+// vars
+
+$bg-color: #111111;
+$main-text-color: #c7c7c7;
+
+// base
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  background-color: $bg-color;
+  color: $main-text-color;
+  font-family: HelveticaRegular;
+}
+
+// side-bar
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  height: 100%;
+  padding: 27px 17px;
+  font-size: 20px;
+  box-shadow: 4px 0 0 rgba(0, 0, 0, 0.25);
+
+  &__header {
+    display: flex;
+    flex-shrink: 1;
+  }
+
+  &__header-menu-img {
+    margin-left: 13px;
+    margin-right: 50px;
+  }
+
+  &__account {
+    display: flex;
+    flex-shrink: 1;
+    margin: 42px 0 32px 0;
+  }
+
+  &__account-img-block {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-right: 15px;
+    width: 78px;
+    height: 78px;
+    background: #0C0C0C;
+    border-radius: 5px;
+  }
+
+  &__account-img {
+    display: flex;
+    align-self: center;
+  }
+
+  &__account-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__account-name {
+  }
+
+  &__account-exit {
+    color: #868688;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+
+  .nav-bar {
+    flex-grow: 1;
+
+		&__list {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 12px;
+		}
+
+		&__link {
+      padding: 14px 0 14px 10px;
+      color: #3E3E3E;
+
+      &_icon_home::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/home.svg) no-repeat center center;
+      }
+
+      &_icon_finger::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/finger.svg) no-repeat center center;
+      }
+
+      &_icon_man::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/man.svg) no-repeat center center;
+      }
+
+      &_icon_clock::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/clock.svg) no-repeat center center;
+      }
+
+      &_icon_peaple::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/peaple.svg) no-repeat center center;
+      }
+
+      &_icon_music::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/music.svg) no-repeat center center;
+      }
+
+      &_icon_brush::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/brush.svg) no-repeat center center;
+      }
+
+      &_icon_gear::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/gear.svg) no-repeat center center;
+      }
+
+      &_icon_upload::before {
+        content: '';
+        float: left;
+        margin-right: 20px;
+        height: 18px;
+        width: 18px;
+        background: url(/img/nav/upload.svg) no-repeat center center;
+      }
+		}
+
+		&__title {
+      font-family: "HelveticaBold";
+      margin-bottom: 15px;
+		}
+  }
+
+}
